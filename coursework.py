@@ -26,7 +26,7 @@ val_pool = Pool(X_val, y_val, cat_features=cat_features)
 
 # Инициализация модели CatBoost
 model = CatBoostRegressor(
-    iterations=1000,  # Количество итераций
+    iterations=2000,  # Количество итераций
     learning_rate=0.1,  # Скорость обучения
     depth=6,  # Глубина деревьев
     loss_function='RMSE',  # Функция потерь
